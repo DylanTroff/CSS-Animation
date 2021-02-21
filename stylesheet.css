@@ -1,0 +1,1488 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    animation-play-state: paused;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.achtergrond {
+    height: 1000px;
+    z-index: 1;
+    background-image: linear-gradient(#4A6573 13em,
+            #ffcf67 25em,
+            #065218 8em,
+            #19b54a calc(100% - 1em))
+}
+
+body.argentijn .achtergrond {
+    background-image: linear-gradient(#5cedff,
+            #ffcf67 25em,
+            #ffed35 8em,
+            #F8F0A4 calc(100% - 1em))
+}
+
+body.barcalona .achtergrond {
+    background-image: linear-gradient(#5cedff,
+            #ffcf67 25em,
+            #ffed35 8em,
+            #F8F0A4 calc(100% - 1em))
+}
+
+body.chelsea .achtergrond {
+    height: 1000px;
+    z-index: 1;
+    background-image: linear-gradient(#4A6573 13em,
+            #ffcf67 25em,
+            #065218 8em,
+            #19b54a calc(100% - 1em))
+}
+
+body.dortmund .achtergrond {
+    height: 1000px;
+    z-index: 1;
+    background-image: linear-gradient(#4A6573 13em,
+            #ffcf67 25em,
+            #065218 8em,
+            #19b54a calc(100% - 1em))
+}
+
+body.atletico .achtergrond {
+    background-image: linear-gradient(#5cedff,
+            #ffcf67 25em,
+            #ffed35 8em,
+            #F8F0A4 calc(100% - 1em))
+}
+
+.nico {
+    position: absolute;
+    height: 60em;
+    width: 40em;
+    left: calc(50% - 20em);
+    top: 3em;
+}
+
+
+#puntenteller {
+    position: absolute;
+    display: none;
+
+}
+
+.buttonaan {
+    position: absolute;
+    border-radius: 15%;
+    border: solid .2em;
+    top: 30%;
+    background-color: greenyellow;
+    z-index: 30;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 14px;
+    font-family: monospace;
+
+}
+
+.buttonuit {
+    position: absolute;
+    border-radius: 15%;
+    border: solid .2em;
+    top: 40%;
+    background-color: red;
+    z-index: 30;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 22px;
+    font-family: monospace;
+
+}
+
+.transfer {
+    position: absolute;
+    border-radius: 15%;
+    border: solid .2em;
+    top: 50%;
+    background-color: yellow;
+    z-index: 30;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 22px;
+    font-family: monospace;
+
+}
+
+
+
+.argentinie {
+    position: absolute;
+    top: 32.5%;
+    left: 92%;
+    width: 3em;
+    height: 3em;
+    border-radius: 0% 0% 50% 50%;
+    box-shadow: -0px 5px 0px 2px green;
+    background-color: goldenrod;
+    border: .1em solid black;
+}
+
+.ajax {
+    position: absolute;
+    top: 25%;
+    left: 92%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: solid red .2em;
+    background-color: white;
+}
+
+.barca {
+    position: absolute;
+    top: 41%;
+    left: 92%;
+    width: 3em;
+    height: 3em;
+    border-radius: 0% 0% 50% 50%;
+    border: solid .2em;
+    border-color: darkgoldenrod;
+    background-image: linear-gradient(to right,
+            blue,
+            red 1.3em,
+            blue)
+}
+
+.chelsea {
+    position: absolute;
+    top: 48%;
+    left: 92%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: solid black .2em;
+    background-color: blue;
+}
+
+.dortmund {
+    position: absolute;
+    top: 55%;
+    left: 92%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: solid black .2em;
+    background-color: yellow;
+}
+
+.atleti {
+    position: absolute;
+    top: 62%;
+    left: 92%;
+    width: 3em;
+    height: 3em;
+    border-radius: 0% 0% 50% 50%;
+    border: solid .3em;
+    border-color: blue;
+    background-image: linear-gradient(to right,
+            white .6em,
+            red .6em,
+            red 1.1em,
+            white 1.1em,
+            white 1.6em,
+            red 1.6em,
+            red 2.1em,
+            white 2.1em,
+            white 2.6em,
+            red 2.6em,
+            red 3.1em)
+}
+
+
+/*******************/
+/*Het haar*/
+/*******************/
+.kapsel {
+    position: absolute;
+    z-index: 23;
+}
+
+.haar {
+    position: absolute;
+    width: 2em;
+    transform-origin: 1em 1em;
+    z-index: 23;
+}
+
+.haar.links {
+    position: absolute;
+    border-radius: 1em 1em 1.75em .25em / 1em 1em 6em .25em;
+    left: 11em;
+    height: 6em;
+    top: 4em;
+    z-index: 23;
+    background-color: #371D02;
+}
+
+.haar.rechts {
+    position: absolute;
+    border-radius: 1em 1em .25em 1.75em / 1em 1em .25em 3em;
+    top: 3em;
+    height: 7em;
+    right: -27em;
+    z-index: 23;
+    background-color: #371D02;
+}
+
+.haar.boven {
+    position: absolute;
+    width: 15em;
+    height: 5em;
+    left: 11em;
+    border-radius: 100% 60% 0% 0%;
+    background-color: #371D02;
+}
+
+
+.haar.lok {
+    position: absolute;
+    top: 3em;
+    left: 16.5em;
+    width: 0;
+    height: 0;
+    border-top: 120px solid #371D02;
+    border-radius: 0% 0 0 40%;
+    border-right: 50px solid transparent;
+    transform: rotate(45deg);
+
+    animation-name: lokje;
+    animation-duration: .4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/*******************/
+/*Animatie voor het kapsel*/
+/*******************/
+
+@keyframes kapsel {
+    0% {
+        transform: scaleY(.95)
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.kapsel {
+    animation-name: kapsel;
+    animation-duration: .4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/*******************/
+/*Animatie voor het haarlokje*/
+/*******************/
+
+@keyframes lokje {
+    0% {
+        transform: rotate(45deg)
+    }
+
+    100% {
+        transform: rotate(25deg)
+    }
+}
+
+/*******************/
+/* Het gezicht */
+/*******************/
+
+.hoofd {
+    position: absolute;
+    height: 23em;
+    width: 16em;
+    top: .5em;
+    left: calc(50% - 9em);
+    background-color: #F1C27D;
+    border-radius: 150px 150px 200px 200px;
+    border: solid .5em;
+    box-shadow: inset 0 -1.5em 0 #B07B42;
+    z-index: 20;
+}
+
+/*******************/
+/* De ogen en wenkbrouwen */
+/*******************/
+
+@keyframes knipperen {
+    0% {
+        transform: scaleY(1);
+    }
+
+    48% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0);
+    }
+
+    52% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+
+.oog {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 10% 10% 50% 50%;
+    top: 45%;
+
+    animation-name: knipperen;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 30;
+}
+
+.oog.links {
+    right: calc(-180%);
+    transform: rotate(10deg);
+    background-color: black;
+}
+
+.oog.rechts {
+    left: calc(480%);
+    transform: rotate(-10deg);
+    background-color: black;
+}
+
+.wenk {
+    position: absolute;
+    text-align: center;
+    height: 15px;
+    width: 100px;
+    transition: .5s;
+}
+
+.wenk:before {
+    content: '';
+    position: absolute;
+    top: 9.4em;
+    left: 1.8em;
+    height: 100%;
+    width: 21%;
+    background: black;
+    transform: skew(0deg, -20deg);
+}
+
+.wenk:after {
+    content: '';
+    position: absolute;
+    top: 9.5em;
+    right: -0.5em;
+    height: 100%;
+    width: 60%;
+    background: black;
+    transform: skew(3deg, 10deg);
+}
+
+.nico:hover .wenk {
+    transform: rotate(5deg) translate(15px, 5px);
+}
+
+.wenk.rechts {
+    transform: scaleX(-1);
+    left: calc(50% + 27px)
+}
+
+.nico:hover .wenk.rechts {
+    transform: scaleX(-1) rotate(5deg) translate(15px, 5px);
+}
+
+/*******************/
+/* Neus en mond */
+/*******************/
+
+.neus {
+    position: absolute;
+    margin: 1px;
+    padding: 2px;
+    height: 5px;
+    width: 30px;
+    top: 15em;
+}
+
+.neus:before {
+    content: '';
+    position: absolute;
+    left: 6em;
+    height: 100%;
+    width: 80%;
+    background: black;
+    transform: skew(0deg, 20deg);
+    border-radius: 30px 0 30px 30px;
+}
+
+.neus:after {
+    content: '';
+    position: absolute;
+    right: -7em;
+    height: 100%;
+    width: 80%;
+    background: black;
+    transform: skew(0deg, -20deg);
+    border-radius: 0 30px 30px 30px;
+
+}
+
+/*******************/
+/*OREN EN BAARD*/
+/*******************/
+.oor {
+    position: absolute;
+    width: 2.5em;
+    height: 6em;
+    top: 8.5em;
+    background-color: #F1C27D;
+    border: solid .5em;
+    border-radius: 0 30px 30px 0;
+}
+
+.oor.links {
+    transform: scaleX(-1);
+    left: -2.5em;
+}
+
+.oor.rechts {
+    right: -2.5em;
+}
+
+.oorlel.links {
+    position: absolute;
+    background-color: black;
+    height: .5em;
+    width: 2em;
+    top: 12em;
+    left: -1.8em;
+    transform: rotate(60deg)
+}
+
+.oorlel.rechts {
+    position: absolute;
+    background-color: black;
+    height: .5em;
+    width: 2em;
+    top: 12em;
+    right: -1.8em;
+    transform: rotate(-60deg)
+}
+
+.baardring {
+    position: absolute;
+    height: 5em;
+    width: 6em;
+    top: 16em;
+    left: calc(50% - 3em);
+    background-color: transparent;
+    border: solid 1em;
+    border-color: #B07B42;
+    border-radius: 8em / 4em;
+}
+
+.mond {
+    position: absolute;
+    height: 2em;
+    width: 4em;
+    top: 17em;
+    left: calc(50% - 2em);
+    background-color: transparent;
+    border: solid .5em;
+    border-radius: 8em / 4em;
+}
+
+.mondlijn {
+    position: absolute;
+    height: .5em;
+    width: 4.8em;
+    top: 17.8em;
+    left: calc(50% - 2.4em);
+    background-color: black;
+    border-radius: 30px;
+    z-index: 3;
+}
+
+/*******************/
+/* Het bovenlichaam*/
+/*******************/
+
+.bovenlichaam {
+    position: absolute;
+    height: 9em;
+    width: 10em;
+    background-color: white;
+    border: solid .5em;
+    top: 21em;
+    left: 14em;
+    background-image: linear-gradient(to right,
+            white,
+            white 1em,
+            red 1em,
+            red calc(100% - 1em),
+            white calc(100% - 1em),
+            white);
+    z-index: 10;
+
+}
+
+body.argentijn .bovenlichaam {
+    background-image: linear-gradient(to right,
+            lightblue,
+            lightblue,
+            white,
+            white,
+            lightblue,
+            white,
+            white,
+            lightblue,
+            white,
+            white,
+            lightblue,
+            lightblue);
+}
+
+body.barcalona .bovenlichaam {
+    background-image: linear-gradient(to right,
+            blue,
+            blue,
+            red,
+            red,
+            blue,
+            red,
+            red,
+            blue,
+            red,
+            red,
+            blue,
+            blue);
+}
+
+body.chelseablauw .bovenlichaam {
+    background-image: linear-gradient(to right,
+            blue,
+            blue,
+            blue,
+            blue,
+            blue,
+            blue);
+}
+
+body.dortmundgeel .bovenlichaam {
+    background-image: linear-gradient(to right,
+            yellow,
+            yellow);
+}
+
+body.atletico .bovenlichaam {
+    background-image: linear-gradient(to right,
+            white,
+            white 1em,
+            red 1em,
+            red 2em,
+            white 2em,
+            white 3em,
+            red 3em,
+            red 4em,
+            white 4em,
+            white 5em,
+            red 5em,
+            red 6em,
+            white 6em,
+            white 7em,
+            red 7em,
+            red 8em,
+            white 8em);
+}
+
+.nek {
+    position: absolute;
+    left: calc(50% - 1.5em);
+    width: 3em;
+    height: 3em;
+    background-color: #F1C27D;
+    z-index: 10;
+    transform: rotate(45deg);
+    border: inherit;
+}
+
+.logo {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: solid black .1em;
+    background-color: white;
+}
+
+body.argentijn .logo {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    width: 2em;
+    height: 2em;
+    border-radius: 0% 0% 50% 50%;
+    box-shadow: -0px 5px 0px 2px green;
+    background-color: goldenrod;
+}
+
+body.barcalona .logo {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    width: 2em;
+    height: 2em;
+    border-radius: 0% 0% 50% 50%;
+    border: solid .3em;
+    border-color: darkgoldenrod;
+    background-image: linear-gradient(to right,
+            blue,
+            red .8em,
+            blue)
+}
+
+body.chelseablauw .logo {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: solid black .2em;
+    background-color: blue;
+}
+
+body.dortmundgeel .logo {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: solid black .2em;
+    background-color: yellow;
+}
+
+body.atletico .logo {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    width: 2em;
+    height: 2em;
+    border-radius: 0% 0% 50% 50%;
+    border: solid .3em;
+    border-color: blue;
+    background-image: linear-gradient(to right,
+            white .3em,
+            red .3em,
+            red .55em,
+            white .55em,
+            white .8em,
+            red .8em,
+            red 1.05em,
+            white 1.05em,
+            white 1.3em,
+            red 1.3em,
+            red 1.55em,
+            white 1.55em)
+}
+
+/*******************/
+/*Kraag*/
+/*******************/
+
+.kraag {
+    position: absolute;
+    height: .6em;
+    background-color: white;
+    border: solid red;
+    z-index: 5;
+}
+
+.kraag.links {
+    position: absolute;
+    width: 4.3em;
+    top: 2em;
+    left: .6em;
+    transform: rotate(45deg)
+}
+
+.kraag.rechts {
+    position: absolute;
+    width: 5.5em;
+    top: 2em;
+    left: 3.5em;
+    transform: rotate(-45deg);
+    border-radius: 0% 50%;
+}
+
+body.argentijn .kraag {
+    border: solid lightblue;
+}
+
+body.barcalona .kraag {
+    background-color: red;
+    border: solid blue;
+}
+
+body.chelseablauw .kraag {
+    background-color: white;
+    border: solid blue;
+}
+
+body.dortmundgeel .kraag {
+    background-color: yellow;
+    border: solid black;
+}
+
+/*******************/
+/*armen*/
+/*******************/
+
+.arm {
+    position: absolute;
+    top: 21em;
+    width: 3em;
+    height: 7em;
+    background-color: #F1C27D;
+    z-index: 5;
+    border-style: solid;
+    border-width: .0em .5em;
+    background-image: linear-gradient(white,
+            white 4em,
+            red .1em,
+            red calc(100% - 2.5em),
+            #F1C27D calc(100% - 2.7em));
+}
+
+.arm.links {
+    position: absolute;
+    transform: skew(-35deg);
+    left: 12em;
+}
+
+.arm.rechts {
+    position: absolute;
+    transform: skew(35deg);
+    left: 23em;
+}
+
+body.argentijn .arm {
+    background-image: linear-gradient(white,
+            white 4em,
+            lightblue .1em,
+            lightblue calc(100% - 2.5em),
+            #F1C27D calc(100% - 2.7em));
+}
+
+body.barcalona .arm {
+    background-image: linear-gradient(blue,
+            blue 4em,
+            red .1em,
+            red calc(100% - 2.5em),
+            #F1C27D calc(100% - 2.7em));
+}
+
+body.chelseablauw .arm {
+    background-image: linear-gradient(blue,
+            blue 4em,
+            white .1em,
+            white calc(100% - 2.5em),
+            #F1C27D calc(100% - 2.7em));
+}
+
+body.dortmundgeel .arm {
+    background-image: linear-gradient(yellow,
+            yellow 4em,
+            black .1em,
+            black calc(100% - 2.5em),
+            #F1C27D calc(100% - 2.7em));
+}
+
+body.atletico .arm {
+    background-image: linear-gradient(white,
+            white 4em,
+            red .1em,
+            red calc(100% - 2.5em),
+            #F1C27D calc(100% - 2.7em));
+}
+
+.hand {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background-color: #F1C27D;
+    border-style: solid;
+    border-width: 0em .5em .5em .5em;
+    top: 28em;
+    z-index: 8;
+}
+
+.hand.links {
+    left: 9.5em;
+}
+
+.hand.rechts {
+    left: 25.5em;
+}
+
+.vinger {
+    position: absolute;
+    top: 29em;
+    width: .7em;
+    height: .7em;
+    background-color: black;
+    z-index: 8;
+}
+
+.vinger.links {
+    left: 11.5em;
+}
+
+.vinger.rechts {
+    left: 26em;
+}
+
+/*******************/
+/*onderlichaam*/
+/*******************/
+
+.broek {
+    position: absolute;
+    height: 3em;
+    background-color: white;
+    border-radius: 10%;
+    top: 29em;
+    z-index: 5;
+}
+
+.broek.links {
+    width: 5em;
+    border-style: solid;
+    border-width: .5em 0em .5em .5em;
+    left: calc(50% - 5.9em);
+    background-image: linear-gradient(to left,
+            white,
+            white 3.3em,
+            red 1em,
+            red calc(100% - 1em),
+            white calc(100% - 3em),
+            white);
+}
+
+.broek.rechts {
+    width: 5em;
+    border-style: solid;
+    border-width: .5em .5em .5em 0em;
+    left: calc(47%);
+    background-image: linear-gradient(to right,
+            white,
+            white 3.3em,
+            red 1em,
+            red calc(100% - 1em),
+            white calc(100% - 3em),
+            white);
+}
+
+body.argentijn .broek.rechts {
+    background-image: linear-gradient(to right,
+            white,
+            white 3.3em,
+            lightblue 1em,
+            lightblue calc(100% - 1em),
+            white calc(100% - 3em),
+            white);
+}
+
+body.barcalona .broek.rechts {
+    background-image: linear-gradient(to right,
+            blue,
+            blue 3.3em,
+            red 1em,
+            red calc(100% - 1em),
+            blue calc(100% - 3em),
+            blue);
+}
+
+body.chelseablauw .broek.rechts {
+    background-image: linear-gradient(to right,
+            blue,
+            blue 3.3em,
+            blue 1em,
+            blue calc(100% - 1em),
+            blue calc(100% - 3em),
+            blue);
+}
+
+body.dortmundgeel .broek.rechts {
+    background-image: linear-gradient(to right,
+            black,
+            black 3.3em,
+            black 1em,
+            black calc(100% - 1em),
+            black calc(100% - 3em),
+            black);
+}
+
+body.atletico .broek.rechts {
+    background-image: linear-gradient(to right,
+            blue,
+            blue 3.3em,
+            blue 1em,
+            blue calc(100% - 1em),
+            blue calc(100% - 3em),
+            blue);
+}
+
+body.argentijn .broek.links {
+    background-image: linear-gradient(to left,
+            white,
+            white 3.3em,
+            lightblue 1em,
+            lightblue calc(100% - 1em),
+            white calc(100% - 3em),
+            white);
+}
+
+body.barcalona .broek.links {
+    background-image: linear-gradient(to left,
+            blue,
+            blue 3.3em,
+            red 1em,
+            red calc(100% - 1em),
+            blue calc(100% - 3em),
+            blue);
+}
+
+body.chelseablauw .broek.links {
+    background-image: linear-gradient(to left,
+            blue,
+            blue 3.3em,
+            blue 1em,
+            blue calc(100% - 1em),
+            blue calc(100% - 3em),
+            blue);
+}
+
+body.dortmundgeel .broek.links {
+    background-image: linear-gradient(to left,
+            black,
+            black 3.3em,
+            black 1em,
+            black calc(100% - 1em),
+            black calc(100% - 3em),
+            black);
+}
+
+body.atletico .broek.links {
+    background-image: linear-gradient(to left,
+            blue,
+            blue 3.3em,
+            blue 1em,
+            blue calc(100% - 1em),
+            blue calc(100% - 3em),
+            blue);
+}
+
+
+
+.benen {
+    position: absolute;
+    top: 31.5em;
+    width: 4em;
+    height: 2em;
+    background-color: #F1C27D;
+    border: solid .5em;
+    z-index: 5
+}
+
+.benen.links {
+    position: absolute;
+    left: calc(50% - 5.5em);
+    border-radius: 0% 0% 30% 30%;
+}
+
+.benen.rechts {
+    right: calc(50% - 3.5em);
+    border-radius: 0% 0% 30% 30%;
+}
+
+/*******************/
+/*Sokken:;*/
+/*******************/
+.sokken {
+    position: absolute;
+    top: 33em;
+    width: 4em;
+    height: 2em;
+    background-color: white;
+    border: solid .5em;
+    border-radius: 0% 0% 0% 0%;
+    background-image: linear-gradient(white,
+            white .2em,
+            red .3em,
+            red calc(100% - .6em),
+            white calc(100% - .8em),
+            white,
+            white .5em,
+            red .6em,
+            red calc(100% - .3em),
+            white calc(100% - .8em));
+    z-index: 5;
+}
+
+.sokken.links {
+    right: calc(50% + 1.5em);
+}
+
+.sokken.rechts {
+    left: calc(50% - .5em);
+}
+
+
+body.argentijn .sokken {
+    background-image: linear-gradient(white,
+            white .2em,
+            lightblue .3em,
+            lightblue calc(100% - .6em),
+            white calc(100% - .8em),
+            white,
+            white .5em,
+            lightblue .6em,
+            lightblue calc(100% - .3em),
+            white calc(100% - .8em));
+}
+
+body.barcalona .sokken {
+    background-image: linear-gradient(blue,
+            blue .2em,
+            red .3em,
+            red calc(100% - .6em),
+            blue calc(100% - .8em),
+            blue,
+            blue .5em,
+            red .6em,
+            red calc(100% - .3em),
+            blue calc(100% - .8em));
+}
+
+body.chelseablauw .sokken {
+    background-image: linear-gradient(white,
+            white .2em,
+            blue .3em,
+            blue calc(100% - .6em),
+            white calc(100% - .8em),
+            white,
+            white .5em,
+            white .6em,
+            white calc(100% - .3em),
+            white calc(100% - .8em));
+}
+
+body.dortmundgeel .sokken {
+    background-image: linear-gradient(yellow,
+            yellow .2em,
+            black .3em,
+            black calc(100% - .6em),
+            yellow calc(100% - .8em),
+            yellow,
+            black .5em,
+            yellow .6em,
+            yellow calc(100% - .3em),
+            black calc(100% - .8em));
+}
+
+body.atletico .sokken {
+    background-image: linear-gradient(red,
+            red .2em,
+            red .3em,
+            red calc(100% - .6em),
+            red calc(100% - .8em),
+            red,
+            red .5em,
+            red .6em,
+            red calc(100% - .3em),
+            red calc(100% - .8em));
+}
+
+
+.schoen {
+    position: absolute;
+    width: 4.5em;
+    height: 3.5em;
+    top: 34em;
+    background-color: white;
+    border: solid .3em;
+    background-image: linear-gradient(white,
+            white 2em,
+            black 1em,
+            black calc(100% - .5em),
+            red 1em);
+    z-index: 5;
+}
+
+.schoen.links {
+    border-radius: 30px 30px 0px 0px;
+    right: calc(50% + 1.3em)
+}
+
+.schoen.rechts {
+    border-radius: 30px 30px 0px 0px;
+    left: calc(50% - .7em);
+}
+
+/*Argentijns*/
+
+
+body.argentijn .schoen {
+    background-image: linear-gradient(white,
+            white 2em,
+            black 1em,
+            black calc(100% - .5em),
+            lightblue 1em);
+}
+
+body.barcalona .schoen {
+    background-image: linear-gradient(white,
+            white 2em,
+            black 1em,
+            black calc(100% - .5em),
+            white 1em);
+}
+
+body.chelseablauw .schoen {
+    background-image: linear-gradient(white,
+            white 2em,
+            black 1em,
+            black calc(100% - .5em),
+            blue 1em);
+}
+
+body.dortmundgeel .schoen {
+    background-image: linear-gradient(white,
+            white 2em,
+            black 1em,
+            black calc(100% - .5em),
+            yellow 1em);
+}
+
+body.atletico .schoen {
+    background-image: linear-gradient(white,
+            white 2em,
+            black 1em,
+            black calc(100% - .5em),
+            white 1em);
+}
+
+@keyframes lopen-links {
+    0% {
+        transform: none;
+        z-index: 5;
+    }
+
+    100% {
+        transform: scaleY(.955);
+        z-index: 5;
+    }
+}
+
+/************************************/
+/*ANIMATIES LOPEN, WOLKEN en BAL*/
+/************************************/
+
+
+.onder-links {
+    animation-name: lopen-links;
+    animation-duration: .2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lopen-rechts {
+    0% {
+        transform: scaleY(.95)
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.onder-rechts {
+    animation-name: lopen-rechts;
+    animation-duration: .2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.wolk.links {
+    width: 10em;
+    height: 6em;
+    background-color: dimgray;
+    border-radius: 50%;
+    box-shadow: 0em .4em .4em #555454;
+
+    animation-name: wolk-links;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wolk-links {
+    0% {
+        position: absolute;
+        top: -7em;
+        left: 5%;
+    }
+
+    100% {
+        position: absolute;
+        top: 10em;
+        left: 40%;
+        transform: scale(.5)
+    }
+}
+
+.wolk.grootlinks {
+    width: 18em;
+    height: 15em;
+    background-color: dimgray;
+    border-radius: 50%;
+    box-shadow: .2em .4em 0em #555454;
+
+    animation-name: wolk-grootlinks;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wolk-grootlinks {
+    0% {
+        position: absolute;
+        top: 5em;
+        left: -20em;
+    }
+
+    100% {
+        position: absolute;
+        top: 10em;
+        left: 37%;
+        transform: scale(.5)
+    }
+}
+
+.wolk.rechts {
+    width: 14em;
+    height: 9em;
+    background-color: dimgray;
+    border-radius: 50%;
+    box-shadow: .4em .4em 0 #555454;
+
+    animation-name: wolk-rechts;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wolk-rechts {
+    0% {
+        position: absolute;
+        top: -7em;
+        right: 5%;
+    }
+
+    100% {
+        position: absolute;
+        top: 14em;
+        right: 45%;
+        transform: scale(.5)
+    }
+}
+
+body.argentijn .wolk {
+    background-color: white;
+    box-shadow: .4em .4em 0 #E4DFDF;
+}
+
+body.barcalona .wolk {
+    background-color: white;
+    box-shadow: .4em .4em 0 #E4DFDF;
+}
+
+
+.bal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    z-index: 6;
+    border: solid .3em;
+
+    animation-name: balrol;
+    animation-duration: 2.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+@keyframes balrol {
+    0% {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+    }
+
+    10% {
+        position: absolute;
+        left: 50%;
+        top: 75%;
+    }
+
+    20% {
+        position: absolute;
+        left: 50%;
+        top: 95%;
+
+    }
+
+    50% {
+        position: absolute;
+        left: 50%;
+        top: 85%;
+    }
+
+    60% {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+    }
+
+    100% {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+    }
+}
+
+.balkleur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(red,
+            white,
+            red,
+            red,
+            red,
+            white,
+            red);
+    background-size: 100% 300%;
+    animation: balkleur 1s linear infinite;
+    animation-play-state: paused;
+}
+
+body.argentijn .balkleur {
+    background-image: linear-gradient(lightblue,
+            white,
+            lightblue,
+            lightblue,
+            lightblue,
+            white,
+            lightblue);
+}
+
+body.barcalona .balkleur {
+    background-image: linear-gradient(blue,
+            red,
+            blue,
+            blue,
+            blue,
+            red,
+            blue);
+}
+
+body.chelseablauw .balkleur {
+    background-image: linear-gradient(blue,
+            white,
+            blue,
+            blue,
+            blue,
+            white,
+            blue);
+}
+
+body.dortmundgeel .balkleur {
+    background-image: linear-gradient(yellow,
+            black,
+            yellow,
+            yellow,
+            yellow,
+            black,
+            yellow);
+}
+
+body.atletico .balkleur {
+    background-image: linear-gradient(red,
+            red,
+            white,
+            white,
+            white,
+            red,
+            red);
+}
+
+@keyframes balkleur {
+    0% {
+        background-position: center bottom;
+    }
+
+    100% {
+        background-position: center top;
+    }
+}
+
+.trap {
+    position: absolute;
+    z-index: 50;
+    display: none;
+}
+
+.applaus {
+    position: absolute;
+    z-index: 50;
+    display: none;
+}
+
+
+body.lopen *,
+body.lopen .balkleur {
+    animation-play-state: running;
+}
